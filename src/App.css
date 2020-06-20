@@ -21,3 +21,11 @@ body {
 :hover {
   color: #000;
 }
+
+#searchBarLabel {
+  font-size: 30px;
+}
+
+#searchBar {
+  height: 50px;
+}

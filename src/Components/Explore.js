@@ -37,14 +37,17 @@ export default class Explore extends Component {
     
     createStory(i) {
         return (
-            <Story 
-            storyTitle={this.state[i].title} 
-            storyContent={this.state[i].desc} 
-            storyImage={this.state[i].image} 
-            altImage={this.state[i].alt}
-            imgWidth={this.state[i].width}
-            style={storyStyle}
-            />
+            <div>
+                <Story 
+                storyTitle={this.state[i].title} 
+                storyContent={this.state[i].desc} 
+                storyImage={this.state[i].image} 
+                altImage={this.state[i].alt}
+                imgWidth={this.state[i].width}
+                style={storyStyle}
+                />
+                <hr></hr>
+            </div>
         )
     }
 
