@@ -2,10 +2,12 @@ import React from 'react'
 import {ReactComponent as ReactLogo} from '../Images/HeaderLogo 48px.svg';
 import { Link } from 'react-router-dom'
 
+// This is the header part. Please help me fix the css thanks.
+
 export default function Header() {
     return (
         <header style={headerStyle}>
-            <Link style={logoImage} to="/" className="headerLink"><ReactLogo /></Link>
+            <Link style={logoImage} to="/" className="Logo"><ReactLogo/></Link>
             <Link style={linkStyle} to="/" className="headerLink">Cheer Me Up!</Link>
             <Link style={linkStyle} to="/" className="headerLink">Search</Link>
             <Link style={linkStyle} to="/" className="headerLink">About</Link>
@@ -24,17 +26,16 @@ const headerStyle = {
 }
 
 const logoImage = {
-    height: '32px',
-    padding: '20px',
-    border: '1px solid black',
+    padding: '10px',
+    // border: '1px solid black',
     textDecoration: 'none',
     textAlign: 'center',
+    transform: 'translate(-50%, -50%)',
 }
 
 const linkStyle = {
     textAlign: 'center',
-    border: '1px solid black',
-    background: 'none',
+    // border: '1px solid black',
     textDecoration: 'none',
     color: 'fff',
     fontSize: '20px',
