@@ -7,6 +7,8 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.4;
+  background: rgb(252,234,230);
+  background-color: linear-gradient(148deg, rgba(252,234,230,1) 0%, rgba(252,255,221,1) 100%);
 }
 
 :visited {
