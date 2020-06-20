@@ -8,10 +8,10 @@ export default function Header() {
     return (
         <header style={headerStyle}>
             <Link style={logoImage} to="/" className="Logo"><ReactLogo/></Link>
-            <Link style={linkStyle} to="/" className="headerLink">Cheer Me Up!</Link>
-            <Link style={linkStyle} to="/" className="headerLink">Search</Link>
-            <Link style={linkStyle} to="/" className="headerLink">About</Link>
-            <Link style={linkStyle} to="/" className="headerLink">Explore</Link>
+            <Link style={logoStyle} to="/" className="headerLink">Cheer Me Up!</Link>
+            <Link style={linkStyle} to="/explore" className="headerLink">Explore</Link>
+            <Link style={linkStyle} to="/search" className="headerLink">Search</Link>
+            <Link style={linkStyle} to="/about" className="headerLink">About</Link>
         </header>
     )
 }
@@ -23,6 +23,7 @@ const headerStyle = {
     background: '#FFC67A',
     height: '55px',
     width: '100%',
+    zIndex: '10',
 }
 
 const logoImage = {
@@ -40,4 +41,14 @@ const linkStyle = {
     color: 'fff',
     fontSize: '20px',
     padding: '10px',
+}
+
+const logoStyle = {
+    textAlign: 'center',
+    // border: '1px solid black',
+    textDecoration: 'none',
+    color: 'fff',
+    fontSize: '20px',
+    padding: '10px',
+    fontWeight: 'bold',
 }
