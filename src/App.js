@@ -1,7 +1,8 @@
 import React from 'react';
 import Header from './Components/Layout/Header'
 import Story from './Components/Story/Story'
-import image1 from './Components/Images/Samoyed.png'   
+import image1 from './Components/Images/Samoyed.png'
+import About from './Components/About'   
 
 import { BrowserRouter as Router, Route} from 'react-router-dom'
 import './App.css';
@@ -16,6 +17,7 @@ function App() {
             <Story storyContent={storyContent1} storyTitle={storyTitle1} storyImage={storyImage1}/>
           </React.Fragment>
         )} />
+        <Route path="/about" component={About} />
       </div>
     </Router>
   );
