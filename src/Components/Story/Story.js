@@ -6,18 +6,14 @@ import React, { Component } from 'react'
 export default class Story extends Component {
     render() {
         return (
-            <div style={StoryTitleStyle}>
-                <h1>Cheer of the day</h1>
+            <div style={this.props.style}>
                 <h2>{this.props.storyTitle}</h2>
                 <p>{this.props.storyContent}</p>
-                <img src={this.props.storyImage} alt="A happy Samoyed dog"/>
+                <img src={this.props.storyImage} alt={this.props.altImage}
+                width={this.props.imgWidth}/>
             </div>
         )
     }
 }
 
-const StoryTitleStyle = {
-    position: 'absolute',
-    top: '10%',
-    left: '10%',
-}
+
