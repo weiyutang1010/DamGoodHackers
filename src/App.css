@@ -29,3 +29,23 @@ body {
 #searchBar {
   height: 50px;
 }
+
+/* #homepage p {
+  background-color:#777;
+} */
+
+#homepage img {
+  grid-column-start: 1;
+  grid-row-start: 1;
+}
+
+#homepage h2 {
+  grid-column-start: 2;
+  grid-row-start: 1;
+  /* background-color: #333; */
+}
+
+#homepage p {
+  grid-column-start: 2;
+  grid-row-start: 2;
+}
