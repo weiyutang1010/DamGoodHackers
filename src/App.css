@@ -39,6 +39,7 @@ body {
 #homepage img {
   grid-column-start: 1;
   grid-row-start: 1;
+  padding-top: 2%;
 }
 
 #homepage h2 {
@@ -59,10 +60,13 @@ body {
 
 #results img{
   order: 1;
+  text-align: center;
+  max-height: 29vh;
   /* border: 1px black solid; */
 }
 
 #results p {
   order: 2;
+  padding: '0 5px';
   /* border: 1px black solid; */
 }
