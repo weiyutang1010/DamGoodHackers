@@ -24,11 +24,10 @@ export default function Homepage() {
 }
 
 // Placeholder for the story, Might consider connecting it with database
-const storyTitle1 = `Story Title`;
-// Issue with separating paragraph
-const storyContent1 = `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque hendrerit felis purus, nec interdum felis finibus nec. Pellentesque sodales dignissim ipsum a hendrerit. Donec at nisi sed odio mollis bibendum. Sed commodo sapien quis massa varius, vitae ullamcorper nunc suscipit. Etiam elementum ipsum vitae hendrerit hendrerit. Duis cursus suscipit mattis. Etiam fringilla, arcu vel interdum pellentesque, nisl ligula scelerisque enim, eget bibendum mauris nunc at est. Phasellus urna lectus, luctus vel tortor ut, semper consectetur sapien. Aenean semper pharetra massa, et cursus sem gravida in. Donec lobortis enim eget pellentesque elementum. Nullam at nisi odio. Vestibulum sed mi leo. In elementum imperdiet ultricies. 
+const storyTitle1 = `Meet Samuel!`;
+const storyContent1 = `Samuel was adopted by Dr. Jane Jackson in May 2017. Dr. Jackson is a licensed clinical therapist and brings Samuel to work everyday for clients who engage in animal-assisted therapy. Samuel has helped Dr. Jackson with hundreds of clients since his adoption, and has no plans of retiring soon! 
 
-Nam rutrum maximus sapien, quis scelerisque felis imperdiet et. Donec dictum est sit amet dapibus euismod. Nam in augue ac eros volutpat finibus. Aliquam ut porttitor urna, eget molestie velit. Etiam cursus faucibus turpis. Pellentesque laoreet quam porttitor urna commodo, eget sollicitudin arcu sagittis. Sed auctor erat nec neque accumsan viverra. Fusce eu vestibulum sem.`;
+When Samuel is not at his job, he enjoys long walks at the beach and digging holes at the beach. He enjoys drinking filtered water and enjoys eating the occasional boiled chicken slices.`
 const storyImage1 = image1;
 
 const homePageStyle = {

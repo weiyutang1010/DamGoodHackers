@@ -51,10 +51,12 @@ body {
 #homepage p {
   grid-column-start: 2;
   grid-row-start: 2;
+  margin-top: 1%;
 }
 
 #results h2 {
   order: 0;
+  font-size: 20px;
   /* border: 1px black solid; */
 }
 
