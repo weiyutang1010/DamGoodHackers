@@ -5,35 +5,51 @@ import image3 from './Images/Samoyed.png'
 import image4 from './Images/CoolCat.jpg'
 import Story from './Story/Story'
 
-const desc1 = `Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita sunt minima repudiandae. In atque reprehenderit, dolore aliquam magnam laudantium. Porro explicabo harum asperiores eveniet est deleniti nisi laborum? 
+/*const desc1 = `Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita sunt minima repudiandae. In atque reprehenderit, dolore aliquam magnam laudantium. Porro explicabo harum asperiores eveniet est deleniti nisi laborum? 
 
-Optio omnis quidem obcaecati cum corrupti minus accusamus ad vel corporis, voluptatem et dicta nisi dolorum inventore eum, sequi excepturi voluptatum! Eligendi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem mollitia dolorem id.`
+Optio omnis quidem obcaecati cum corrupti minus accusamus ad vel corporis, voluptatem et dicta nisi dolorum inventore eum, sequi excepturi voluptatum! Eligendi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem mollitia dolorem id.` */
+
+const desc1 = `Pembroke the Penguin is a current resident at the American Penguin Sanctuary. He was born in May 2020 and likes wearing his shell as a hat. His adorableness has garnered worldwide attention and has been featured on multiple news outlets. 
+
+Pembroke loves eating sardines and swimming with his siblings, Penny and Philip, when he's not being interviewed.`
+
+const desc2 = `Grizly, the Grizly Bear, Panda, the Panda Bear, and Ice Bear, the Polar Bear live in a high-rise apartment with their surrogate caretaker, Gary Johnson. The three bear brothers were raised in captivity and love interacting with people. Some might even say they act like people themselves!
+
+Grizly enjoys sunbathing on the roof of Gary's apartment, Panda relaxes by watching television, and Ice Bear loves to cook! Follow their antics on Instagram @webarebears!`
+
+const desc3 = `Samuel the Samoyed was adopted by Dr. Jane Jackson in May 2017. Dr. Jackson is a licensed clinical therapist and brings Samuel to work everyday for clients who engage in animal-assisted therapy. Samuel has helped Dr. Jackson with hundreds of clients since his adoption, and has no plans of retiring soon! 
+
+When Samuel is not at his job, he enjoys long walks at the beach and digging holes at the beach. He enjoys drinking filtered water and enjoys eating the occasional boiled chicken slices.`
+
+const desc4 = `Morpheus the Cat is a cool cat that can be found on the cover of various cat magazines, such as Feline Fancy and Purr Vogue. He began his career as a model on Instagram and his following has been growing since.
+
+His favorite fashion brands include Louis Vuitton and Gucci. Morpheus can be found wearing Gucci collars regularly.`
 
 export default class Explore extends Component {
     state = [{
-                title: "Title1",
+                title: "Pembroke the Penguin",
                 desc: desc1,
                 image: image1,
                 width: "210px",
                 alt: "Alternative text1"
             },
             {
-                title: "Title2",
-                desc: desc1,
+                title: "Three Cute Bears",
+                desc: desc2,
                 image: image2,
                 width: "210px",
                 alt: "Alternative text2"
             },
             {
-                title: "Title3",
-                desc: desc1,
+                title: "Samuel the Samoyed",
+                desc: desc3,
                 image: image3,
                 width: "210px",
                 alt: "Alternative text3"
             },
             {
-                title: "Title4",
-                desc: desc1,
+                title: "Morpheus the Cat",
+                desc: desc4,
                 image: image4,
                 width: "210px",
                 alt: "Alternative text4"
