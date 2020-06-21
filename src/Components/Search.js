@@ -11,7 +11,7 @@ const items = [{
     desc: "Pembroke the Penguin is a current resident at the American Penguin Sanctuary. He was born...",
     image: image1,
     width: "190px",
-    alt: "Alternative text1"
+    alt: "Alternative text1",
 },
 {
     title: "Three Cute Bears",
@@ -158,8 +158,8 @@ const storyStyle = {
     margin: '10px 30px 20px 0',
     textAlign: 'center',
     boxShadow: '5px 5px 3px 4px #ccc',
-    maxHeight: '50vh',
-    width: '21.0%',
+    maxHeight: '60vh',
+    width: '230px',
     overflow: 'hidden',
 }
 

@@ -6,10 +6,10 @@ import { Link } from 'react-router-dom'
 
 export default function Header() {
     return (
-        <header style={headerStyle}>
+        <header style={headerStyle} id="header">
             <Link style={logoImage} to="/" className="Logo"><ReactLogo/></Link>
             <div style={{transform: 'translate(0, 15%)'}}>
-            <Link style={logoStyle} to="/" className="headerLink">Cheer Me Up!</Link>
+            <Link style={logoStyle} to="/" className="homeLink">Cheer Me Up!</Link>
             <Link style={linkStyle} to="/explore" className="headerLink">Explore</Link>
             <Link style={linkStyle} to="/search" className="headerLink">Search</Link>
             <Link style={linkStyle} to="/about" className="headerLink">About</Link>
@@ -19,17 +19,28 @@ export default function Header() {
 }
 
 /*export default function Header(){
-    return (
-        <div class='header' style={headerStyle}>
-            <a href='/' class='logo' style={logoImage}><ReactLogo/></a>
-            <a href='/' class='headerLink' style={logoStyle}>Cheer Me Up!</a>
-            <div class='header-other'>
-                <a href='/explore' style={linkStyle}>Explore</a>
-                <a href='/search' style={linkStyle}>Search</a>
-                <a href='/about' style={linkStyle}>About</a>
+    return(
+        <div className="header" id='header'>
+            <a href='/' className="Logo"><ReactLogo/></a>
+            <div style={{transform: 'translate(0, 15%)'}}>
+            <a href="/" className="homeLink">Cheer Me Up!</a>
+            <a href="/explore" className="headerLink">Explore</a>
+            <a href="/search" className="headerLink">Search</a>
+            <a href="/about" className="headerLink">About</a>
+            <a href ="javascript:void(0);" className="icon" onclick="resize()">
+                <i className='burger'></i></a>
             </div>
         </div>
     )
+}
+
+function resize(){
+    var x = document.getElementById("header");
+    if(x.className === "headerLink"){
+        x.className += "responsive";
+    } else {
+        x.className = "headerLink";
+    }
 }*/
 
 const headerStyle = {
@@ -42,7 +53,6 @@ const headerStyle = {
     zIndex: '1',
     paddingTop: '12px',
     boxShadow: '0 5px 6px -6px black',
-    //paddingBottom:'60px'
 }
 
 const logoImage = {

@@ -7,7 +7,10 @@ export default function Homepage() {
         <div style={{
             height:'100vh', 
             width:'100vw', 
-            background: 'linear-gradient(148deg, rgba(252,234,230,1) 0%, rgba(252,255,221,1) 100%)'}}>
+            background: 'linear-gradient(148deg, rgba(252,234,230,1) 0%, rgba(252,255,221,1) 100%)'
+        }}
+            id="home"
+        >
             <div style={homePageStyle} id="homepage">
                 <h1>Cheer of the day</h1>
                 <Story 
@@ -17,6 +20,7 @@ export default function Homepage() {
                 altImage={"A happy Samoyed dog"} 
                 imgWidth={"350px"}
                 style={storyStyle}
+                id={"homeStory"}
                 />
             </div>
         </div>
@@ -41,12 +45,9 @@ const homePageStyle = {
 }
 
 const storyStyle = {
-    // position: 'relative',
-    // float: 'right',
     display: 'grid',
-    gridTemplateColumns: '37% auto',
+    gridTemplateColumns: '380px auto',
     gridTemplateRows: '6% auto',
-    //background: '#333',
     width: "100%",
     marginTop: '20px',
 }

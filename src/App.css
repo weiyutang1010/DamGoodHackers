@@ -12,12 +12,8 @@ body {
   height: 100vh;
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.4;
-  /* background: rgb(252,234,230); */
   background: rgba(252,255,221,1);
-  /* Try to fix the height too */
-  /* background: linear-gradient(148deg, rgba(252,234,230,1) 0%, rgba(252,255,221,1) 100%); */
   background-size: cover;
-  /* background-repeat: no-repeat; */
 }
 
 :link {
@@ -45,7 +41,6 @@ body {
 #homepage h2 {
   grid-column-start: 2;
   grid-row-start: 1;
-  /* background-color: #333; */
 }
 
 #homepage p {
@@ -56,21 +51,18 @@ body {
 
 #results h2 {
   order: 0;
-  font-size: 20px;
-  /* border: 1px black solid; */
+  font-size: 18px;
 }
 
 #results img{
   order: 1;
   text-align: center;
   max-height: 29vh;
-  /* border: 1px black solid; */
 }
 
 #results p {
   order: 2;
   padding: '0 5px';
-  /* border: 1px black solid; */
 }
 
 #stories img {
@@ -82,7 +74,6 @@ body {
 #stories h2 {
   grid-column-start: 2;
   grid-row-start: 1;
-  /* background-color: #333; */
 }
 
 #stories p {
@@ -90,3 +81,102 @@ body {
   grid-row-start: 2;
   white-space: pre-wrap;
 }
+
+@media screen and (max-width: 720px){
+   #home {
+    height: 100vh !important;
+  }
+
+  #homepage {
+    height: 100% !important;
+    top: 11% !important;
+  }
+
+  #homeStory {
+    display: grid !important;
+    grid-template-columns: auto !important;
+  }
+
+  #homepage img {
+    grid-column-start: 1;
+    grid-row-start: 2;
+    padding-top: 2%;
+  }
+  
+   #homepage h2 {
+    font-size: 30px;
+    grid-column-start: 1;
+    grid-row-start: 1;
+  }
+  
+  #homepage p {
+    grid-column-start: 1;
+    grid-row-start: 3;
+    margin-top: 1%;
+    white-space: pre-wrap;
+    width: 280px !important;
+  } 
+
+  .exploreStory {
+    display: grid !important;
+    grid-template-columns: auto !important;
+    grid-template-rows: 20px auto !important;
+    height: 440px !important;
+  }
+
+  .exploreStory img {
+    grid-column-start: 1 !important;
+    grid-row-start: 2 !important;
+    padding-top: 2% !important;
+  }
+  
+  .exploreStory h2 {
+    font-size: 20px;
+    grid-column-start: 1 !important;
+    grid-row-start: 1 !important;
+  }
+  
+  .exploreStory p {
+    grid-column-start: 1 !important;
+    grid-row-start: 3 !important;
+    margin-top: 1%;
+    white-space: pre-wrap;
+  } 
+
+  #aboutPage {
+    padding: 0 10px;
+  }
+
+  #aboutcmu {
+    margin: 30px 0;
+    padding-left: 3px !important;
+  }
+
+  #aboutus {
+    padding-left: 3px !important;
+  }
+
+  .Person {
+    margin-top: 20px !important;
+  }
+
+  header .Logo {
+    padding: 30px 0 0 13px !important;
+  }
+  
+  .homeLink {
+    font-size: 20px !important;
+    width: 30px !important;
+    padding: 100px 6px 10px 4px !important;
+  }
+  
+  .headerLink {
+    font-size: 16px !important;
+    padding: 5px !important;
+    font-weight: 500;
+  }
+}
+/* You don't have to include @media, it's a the top already */
+/* You can use a tag too for the link */
+
+/* @media (max-width: 700px){ */

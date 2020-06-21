@@ -6,7 +6,7 @@ import React, { Component } from 'react'
 export default class Story extends Component {
     render() {
         return (
-            <div style={this.props.style}>
+            <div style={this.props.style} id={this.props.id} className={this.props.className}>
                 <h2>{this.props.storyTitle}</h2>
                 <img src={this.props.storyImage} alt={this.props.altImage}
                 width={this.props.imgWidth}/>

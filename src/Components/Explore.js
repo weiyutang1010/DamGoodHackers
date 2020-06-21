@@ -65,11 +65,13 @@ export default class Explore extends Component {
                 altImage={this.state[i].alt}
                 imgWidth={this.state[i].width}
                 style={storyStyle}
+                className="exploreStory"
                 />
                 <hr style={{
-                    transform: 'translate(-20%, 0)',
-                    width: '150vw',
+                    transform: 'translate(-14.9%, 0)',
+                    width: '98.8vw',
                     color: '#ccc',
+                    overflow: 'hidden',
                 }}></hr>
             </div>
         )
@@ -103,12 +105,12 @@ const pageStyle = {
 
 const storyStyle = {
     display: 'grid',
-    gridTemplateColumns: '25% auto',
+    gridTemplateColumns: '210px auto',
     gridTemplateRows: '20% auto',
     backgroundColor: '#FFF4D2',
     margin: '20px 0',
     height: '40vh',
     boxShadow: '5px 5px 3px 4px #ccc',
-    overflow: 'hidden',
+    overflow: 'auto',
     padding: '20px',
 }
