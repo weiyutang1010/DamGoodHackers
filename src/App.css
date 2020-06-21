@@ -4,14 +4,24 @@
   padding: 0;
 }
 
+html {
+  min-height: 100%;
+}
+
 body {
+  height: 100vh;
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.4;
-  background: rgb(252,234,230);
+  /* background: rgb(252,234,230); */
   background: rgba(252,255,221,1);
   /* Try to fix the height too */
-  height: 100vh; 
-  background: linear-gradient(148deg, rgba(252,234,230,1) 0%, rgba(252,255,221,1) 100%);
+  /* background: linear-gradient(148deg, rgba(252,234,230,1) 0%, rgba(252,255,221,1) 100%); */
+  background-size: cover;
+  /* background-repeat: no-repeat; */
+}
+
+:link {
+  color: #000;
 }
 
 :visited {
@@ -25,14 +35,6 @@ body {
 #searchBarLabel {
   font-size: 30px;
 }
-
-#searchBar {
-  height: 50px;
-}
-
-/* #homepage p {
-  background-color:#777;
-} */
 
 #homepage img {
   grid-column-start: 1;
@@ -48,4 +50,19 @@ body {
 #homepage p {
   grid-column-start: 2;
   grid-row-start: 2;
+}
+
+#results h2 {
+  order: 0;
+  /* border: 1px black solid; */
+}
+
+#results img{
+  order: 1;
+  /* border: 1px black solid; */
+}
+
+#results p {
+  order: 2;
+  /* border: 1px black solid; */
 }

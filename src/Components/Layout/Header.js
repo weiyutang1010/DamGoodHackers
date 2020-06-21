@@ -16,6 +16,20 @@ export default function Header() {
     )
 }
 
+/*export default function Header(){
+    return (
+        <div class='header' style={headerStyle}>
+            <a href='/' class='logo' style={logoImage}><ReactLogo/></a>
+            <a href='/' class='headerLink' style={logoStyle}>Cheer Me Up!</a>
+            <div class='header-other'>
+                <a href='/explore' style={linkStyle}>Explore</a>
+                <a href='/search' style={linkStyle}>Search</a>
+                <a href='/about' style={linkStyle}>About</a>
+            </div>
+        </div>
+    )
+}*/
+
 const headerStyle = {
     //border: '1px solid black',
     position: 'fixed',
@@ -23,15 +37,21 @@ const headerStyle = {
     background: '#FFC67A',
     height: '55px',
     width: '100%',
-    zIndex: '10',
+    zIndex: '1',
+    paddingTop: '12px',
+    boxShadow: '0 5px 6px -6px black',
+    //paddingBottom:'60px'
 }
 
 const logoImage = {
-    padding: '10px',
+    //padding: '10px',
+    paddingTop: '30px',
     // border: '1px solid black',
     textDecoration: 'none',
     textAlign: 'center',
-    transform: 'translate(-50%, -50%)',
+    transform: 'translate(5%, -50%)',
+    float: 'left',
+    paddingLeft:'50px'
 }
 
 const linkStyle = {
@@ -40,7 +60,9 @@ const linkStyle = {
     textDecoration: 'none',
     color: 'fff',
     fontSize: '20px',
+    marginBottom: '100px',
     padding: '10px',
+    paddingTop:'100px'
 }
 
 const logoStyle = {
@@ -51,4 +73,5 @@ const logoStyle = {
     fontSize: '20px',
     padding: '10px',
     fontWeight: 'bold',
+    paddingTop:'100px'
 }
