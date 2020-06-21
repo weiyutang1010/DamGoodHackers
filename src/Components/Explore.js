@@ -46,7 +46,11 @@ export default class Explore extends Component {
                 imgWidth={this.state[i].width}
                 style={storyStyle}
                 />
-                <hr></hr>
+                <hr style={{
+                    position: 'absolute',
+                    left: '-150%',
+                    width: '100vw',
+                }}></hr>
             </div>
         )
     }

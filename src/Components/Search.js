@@ -34,7 +34,16 @@ const items = [{
     alt: "Alternative text4"
 },]
 
+// function handleClick(e) {
+//     e.preventDefault();
+//     console.log("I am clicked!");
+// }
+
 export default class Search extends Component {
+    state = {
+        value: "",
+    }
+
     createStory(i) {
         return (
             <Story 
@@ -48,24 +57,28 @@ export default class Search extends Component {
         )
     }
 
+    handleClick = (e) => {
+        e.preventDefault();
+    }
+
     render() {
         return (
             <div style={pageStyle}>
-                <form action="POST">
+                <form>
                     {/* Style in app.css */}
                     <label htmlFor="searchBar" id="searchBarLabel">Search for Image</label>
                     <br></br>
-                    <input type="text" id="searchBar"/>
+                    <input type="text" id="searchBar" style={searchBarStyle} placeholder="Enter your search here" value={this.state.value} onChange={this.handleChange}/>
                 </form>
 
-                <span>Tags: </span>
-                <span>Animal</span>
-                <span>Animal</span>
-                <span>Animal</span>
-                <span>Animal</span>
+                <span style={{fontSize:'21px'}}>Tags: </span>
+                <button style={tagStyle} onClick={this.handleClick} value="animal">Animal</button>
+                <button style={tagStyle} onClick={this.handleClick} value="animal">Animal</button>
+                <button style={tagStyle} onClick={this.handleClick} value="animal">Animal</button>
+                <button style={tagStyle} onClick={this.handleClick} value="animal">Animal</button>
 
-                <h2>Results</h2>
-                <div className="results">
+                <h2 style={{marginTop: "4%"}}>Results</h2>
+                <div id="results" style={resultStyle}>
                     {this.createStory(0)}
                     {this.createStory(1)}
                     {this.createStory(2)}
@@ -79,9 +92,43 @@ export default class Search extends Component {
 const pageStyle = {
     position: 'absolute',
     top: '100px',
-    left: '50px',
+    left: '10%',
+    width: '80%',
+    margin: '0 auto',
+}
+
+const resultStyle = {
+    display: 'flex',
+    flexDirection: 'row',
+    flexWrap:'wrap',
 }
 
 const storyStyle = {
-    backgroundColor: '#FFF4D2'
+    flexDirection: 'column',
+    // border: '1px black solid',
+    backgroundColor: '#FFF4D2',
+    flexGrow: '1',
+    margin: '0 15px',
+}
+
+const searchBarStyle = {
+    background: "#fff",
+    border: "1px #666 solid",
+    padding: '12px 20px',
+    margin: '8px 0',
+    height: "40px",
+    width: "90%",
+    borderRadius: "20px",
+    fontSize: "20px",
+    textAlign: "left",
+    outline: "none",
+}
+
+const tagStyle = {
+    margin: '0px 2px',
+    border: '1px solid grey',
+    borderRadius: '2px',
+    padding: '5px 5px',
+    cursor: 'pointer',
+    background: '#fff',
 }
