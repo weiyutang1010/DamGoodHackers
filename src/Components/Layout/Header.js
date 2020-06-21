@@ -8,7 +8,7 @@ export default function Header() {
     return (
         <header style={headerStyle}>
             <Link style={logoImage} to="/" className="Logo"><ReactLogo/></Link>
-            <div style={{transform: 'translate(0, 20%)'}}>
+            <div style={{transform: 'translate(0, 15%)'}}>
             <Link style={logoStyle} to="/" className="headerLink">Cheer Me Up!</Link>
             <Link style={linkStyle} to="/explore" className="headerLink">Explore</Link>
             <Link style={linkStyle} to="/search" className="headerLink">Search</Link>
@@ -74,6 +74,7 @@ const logoStyle = {
     color: 'fff',
     fontSize: '22px',
     padding: '10px',
+    paddingLeft: '8px',
     fontWeight: 'bold',
     paddingTop:'100px'
 }
