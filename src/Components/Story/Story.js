@@ -8,9 +8,9 @@ export default class Story extends Component {
         return (
             <div style={this.props.style}>
                 <h2>{this.props.storyTitle}</h2>
-                <p>{this.props.storyContent}</p>
                 <img src={this.props.storyImage} alt={this.props.altImage}
                 width={this.props.imgWidth}/>
+                <p style={{whiteSpace:'pre-wrap'}}>{this.props.storyContent}</p>
             </div>
         )
     }

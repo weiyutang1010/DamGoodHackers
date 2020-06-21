@@ -5,30 +5,32 @@ import image3 from './Images/Samoyed.png'
 import image4 from './Images/CoolCat.jpg'
 import Story from './Story/Story'
 
+
+
 const items = [{
     title: "Title1",
-    desc: "Description1",
+    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae fuga...",
     image: image1,
     width: "190px",
     alt: "Alternative text1"
 },
 {
     title: "Title2",
-    desc: "Description2",
+    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae fuga...",
     image: image2,
     width: "190px",
     alt: "Alternative text2"
 },
 {
     title: "Title3",
-    desc: "Description3",
+    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae fuga...",
     image: image3,
     width: "190px",
     alt: "Alternative text3"
 },
 {
     title: "Title4",
-    desc: "Description4",
+    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae fuga...",
     image: image4,
     width: "190px",
     alt: "Alternative text4"
@@ -68,7 +70,7 @@ export default class Search extends Component {
                     {/* Style in app.css */}
                     <label htmlFor="searchBar" id="searchBarLabel">Search for Image</label>
                     <br></br>
-                    <input type="text" id="searchBar" style={searchBarStyle} placeholder="Enter your search here" value={this.state.value} onChange={this.handleChange}/>
+                    <input type="text" id="searchBar" style={searchBarStyle} placeholder="Enter your search here" onChange={this.handleChange}/>
                 </form>
 
                 <span style={{fontSize:'21px'}}>Tags: </span>
@@ -79,6 +81,10 @@ export default class Search extends Component {
 
                 <h2 style={{marginTop: "4%"}}>Results</h2>
                 <div id="results" style={resultStyle}>
+                    {this.createStory(0)}
+                    {this.createStory(1)}
+                    {this.createStory(2)}
+                    {this.createStory(3)}
                     {this.createStory(0)}
                     {this.createStory(1)}
                     {this.createStory(2)}
@@ -108,7 +114,14 @@ const storyStyle = {
     // border: '1px black solid',
     backgroundColor: '#FFF4D2',
     flexGrow: '1',
-    margin: '0 15px',
+    flexAlign: 'space-around',
+    padding: '10px 10px',
+    margin: '10px 30px 20px 0',
+    textAlign: 'center',
+    boxShadow: '5px 5px 3px 4px #ccc',
+    maxHeight: '50vh',
+    maxWidth: '22%',
+    overflow: 'hidden',
 }
 
 const searchBarStyle = {
@@ -125,10 +138,11 @@ const searchBarStyle = {
 }
 
 const tagStyle = {
-    margin: '0px 2px',
+    margin: '0px 4px',
     border: '1px solid grey',
-    borderRadius: '2px',
-    padding: '5px 5px',
+    borderRadius: '20px',
+    padding: '5px 10px',
     cursor: 'pointer',
     background: '#fff',
+    outline: "none",
 }

@@ -8,10 +8,12 @@ export default function Header() {
     return (
         <header style={headerStyle}>
             <Link style={logoImage} to="/" className="Logo"><ReactLogo/></Link>
+            <div style={{transform: 'translate(0, 15%)'}}>
             <Link style={logoStyle} to="/" className="headerLink">Cheer Me Up!</Link>
             <Link style={linkStyle} to="/explore" className="headerLink">Explore</Link>
             <Link style={linkStyle} to="/search" className="headerLink">Search</Link>
             <Link style={linkStyle} to="/about" className="headerLink">About</Link>
+            </div>
         </header>
     )
 }
@@ -49,7 +51,7 @@ const logoImage = {
     // border: '1px solid black',
     textDecoration: 'none',
     textAlign: 'center',
-    transform: 'translate(5%, -50%)',
+    transform: 'translate(5%, -45%)',
     float: 'left',
     paddingLeft:'50px'
 }
@@ -59,7 +61,7 @@ const linkStyle = {
     // border: '1px solid black',
     textDecoration: 'none',
     color: 'fff',
-    fontSize: '20px',
+    fontSize: '22px',
     marginBottom: '100px',
     padding: '10px',
     paddingTop:'100px'
@@ -70,8 +72,9 @@ const logoStyle = {
     // border: '1px solid black',
     textDecoration: 'none',
     color: 'fff',
-    fontSize: '20px',
+    fontSize: '22px',
     padding: '10px',
+    paddingLeft: '8px',
     fontWeight: 'bold',
     paddingTop:'100px'
 }
